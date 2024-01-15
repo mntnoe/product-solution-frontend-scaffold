@@ -1,9 +1,15 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background: #eaedf1;
 }
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --color-primary-dark: #021e3e;
+  --color-primary: #406083;
+  --color-primary-light: #cdd4da;
+  --color-background: #f4f6f8;
 }

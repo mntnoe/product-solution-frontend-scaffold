@@ -12,7 +12,7 @@
 .brand {
   font-size: 13px;
   font-weight: 500;
-  color: #406083;
+  color: var(--color-primary);
   text-transform: uppercase;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -23,7 +23,7 @@
   margin-top: 2px;
   font-size: 16px;
   font-weight: 500;
-  color: #021e3e;
+  color: var(--color-primary-dark);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

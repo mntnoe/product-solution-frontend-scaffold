@@ -12,7 +12,7 @@
 
 .header {
   color: #fff;
-  background-color: #406083;
+  background-color: var(--color-primary);
 
   display: flex;
 }
@@ -36,12 +36,12 @@
 .title {
   font-size: 24px;
   letter-spacing: 0.125em;
-  color: #cdd4da;
+  color: var(--color-primary-light);
 }
 
 .content {
   flex: auto;
-  background-color: #f4f6f8;
+  background: var(--color-background);
 
   display: flex;
 }

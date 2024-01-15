@@ -1,6 +1,6 @@
 .illustration {
   border-radius: 50%;
-  background-color: #406083;
+  background-color: var(--color-primary);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -14,16 +14,16 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 600;
-  color: #406083;
+  color: var(--color-primary);
 }
 
 .input {
   padding: 8px;
 
-  border: 1px solid #406083;
+  border: 1px solid var(--color-primary);
   border-radius: 8px;
 
-  color: #021e3e;
+  color: var(--color-primary-dark);
   font-size: 16px;
   line-height: 24px;
 }
@@ -41,6 +41,7 @@
   border: 0 none;
   border-radius: 8px;
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.1);
 
   font-size: 16px;
   line-height: 24px;
@@ -48,11 +49,11 @@
 
 .cancelButton {
   composes: button;
-  background: #cdd4da;
+  background: var(--color-background);
 }
 
 .addButton {
   composes: button;
-  color: #eaedf1;
-  background: #406083;
+  color: #fff;
+  background: var(--color-primary);
 }

@@ -5,6 +5,6 @@
 
   font-size: 24px;
   font-weight: 300;
-  color: #406083;
+  color: var(--color-primary);
   text-align: center;
 }
