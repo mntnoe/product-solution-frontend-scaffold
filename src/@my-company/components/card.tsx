@@ -1,5 +1,5 @@
 import { cx } from "@my-company/style/cx";
-import s from "@my-company/warehoox/components/card.module.css";
+import s from "@my-company/components/card.module.css";
 
 type Props = {
   children?: React.ReactNode;

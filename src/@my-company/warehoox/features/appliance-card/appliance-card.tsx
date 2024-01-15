@@ -1,4 +1,4 @@
-import { Card } from "@my-company/warehoox/components/card";
+import { Card } from "@my-company/components/card";
 import { PackageIcon } from "@my-company/warehoox/components/icons";
 import { Illustration } from "@my-company/warehoox/components/illustration";
 import s from "@my-company/warehoox/features/appliance-card/appliance-card.module.css";
