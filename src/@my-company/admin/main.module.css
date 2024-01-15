@@ -1,0 +1,10 @@
+.card {
+  width: 100%;
+  max-width: 800px;
+  margin: 48px auto;
+
+  font-size: 24px;
+  font-weight: 300;
+  color: #406083;
+  text-align: center;
+}
