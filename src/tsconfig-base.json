@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "composite": true,
+    "skipLibCheck": true, // Faster type checking.
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": "../build/tsout"
+  },
+  "watchOptions": {
+    "excludeDirectories": ["node_modules", "../build"]
+  },
+  "files": [
+    "@my-company/types/config.d.ts",
+    "@my-company/types/declarations.d.ts"
+  ],
+  "exclude": ["node_modules"],
+}

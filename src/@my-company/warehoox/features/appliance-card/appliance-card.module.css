@@ -1,0 +1,30 @@
+.illustration {
+  width: 128px;
+  height: 128px;
+  margin-bottom: auto;
+  align-self: center;
+}
+
+.illustrationIcon {
+  font-size: 92px;
+}
+
+.brand {
+  font-size: 13px;
+  font-weight: 500;
+  color: #406083;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.equipment {
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #021e3e;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

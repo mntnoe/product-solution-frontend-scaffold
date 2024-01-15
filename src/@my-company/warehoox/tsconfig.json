@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig-base.json",
+  "references": [
+    { "path": "components" },
+    { "path": "features" },
+    { "path": "routes" },
+    { "path": "solutions" },
+  ],
+  "include": []
+}

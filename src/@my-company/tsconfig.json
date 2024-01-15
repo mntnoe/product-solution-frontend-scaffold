@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig-base.json",
+  "references": [
+    { "path": "admin" },
+    { "path": "components" },
+    { "path": "style" },
+    { "path": "util" },
+    { "path": "warehoox" }
+  ],
+  "include": []
+}

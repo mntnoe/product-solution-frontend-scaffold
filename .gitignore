@@ -1,0 +1,9 @@
+# IDEs and editors
+.idea/
+.vscode/
+
+# dependencies
+node_modules/
+
+# generated
+build/
