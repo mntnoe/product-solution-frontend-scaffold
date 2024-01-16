@@ -2,7 +2,7 @@ import { BuildProfile } from "../config.js";
 
 const profile: BuildProfile = {
   minify: false,
-  features: {
+  flags: {
     RemoteLogging: false,
   },
 };

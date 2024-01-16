@@ -2,4 +2,4 @@ type AppId = "admin" | "warehoox";
 
 type ProfileId = "default" | "debug";
 
-type FeatureId = "RemoteLogging";
+type FlagId = "RemoteLogging";

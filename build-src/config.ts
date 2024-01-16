@@ -23,9 +23,9 @@ export class BuildContext {
       config: {
         ...this.config,
         ...overrides,
-        features: {
-          ...this.config.features,
-          ...overrides.features,
+        flags: {
+          ...this.config.flags,
+          ...overrides.flags,
         },
       },
     });
@@ -34,14 +34,14 @@ export class BuildContext {
 
 export interface BuildConfig {
   minify: boolean;
-  features: { [feature in FeatureId]?: boolean };
+  flags: { [flag in FlagId]?: boolean };
 }
 
 export type BuildProfile = Partial<BuildConfig>;
 
 export const defaultConfig: BuildConfig = {
   minify: true,
-  features: {
+  flags: {
     RemoteLogging: true,
   },
 };
