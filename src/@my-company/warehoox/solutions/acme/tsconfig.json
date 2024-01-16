@@ -5,6 +5,7 @@
     { "path": "../../features" },
     { "path": "../../routes" },
     { "path": "../../../components" },
+    { "path": "../../../core"},
     { "path": "../../../style" },
     { "path": "../../../util" }
   ],

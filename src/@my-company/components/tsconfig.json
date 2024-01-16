@@ -1,5 +1,9 @@
 {
   "extends": "../../tsconfig-base.json",
-  "references": [{ "path": "../style" }, { "path": "../util" }],
+  "references": [
+    { "path": "../core" },
+    { "path": "../style" },
+    { "path": "../util" }
+  ],
   "include": ["**/*"]
 }

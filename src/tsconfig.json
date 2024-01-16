@@ -3,6 +3,7 @@
   "references": [
     { "path": "@my-company/admin"},
     { "path": "@my-company/components"},
+    { "path": "@my-company/core"},
     { "path": "@my-company/style"},
     { "path": "@my-company/util"},
     { "path": "@my-company/warehoox"}

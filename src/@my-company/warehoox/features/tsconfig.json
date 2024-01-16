@@ -3,6 +3,7 @@
   "references": [
     { "path": "../components" },
     { "path": "../../components" },
+    { "path": "../../core"},
     { "path": "../../style" },
     { "path": "../../util" }
   ],
