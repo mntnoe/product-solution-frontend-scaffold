@@ -1,5 +1,5 @@
 import * as ESBuild from "esbuild";
-import { BuildContext } from "./config.js";
+import { BuildConfig, BuildContext } from "./config.js";
 
 type Options = {
   context: BuildContext;
@@ -20,8 +20,26 @@ export function esbuild(options: Options) {
     target: "es2020",
     tsconfig: options.tsconfig,
     outdir: options.outdir,
-    plugins: [consolePlugin()],
+    plugins: [consolePlugin(), flagsPlugin(options.context.config)],
   });
+}
+
+// Used to inject the feature flags into the build.
+function flagsPlugin(config: BuildConfig): ESBuild.Plugin {
+  return {
+    name: "flags",
+    setup(build) {
+      build.onResolve({ filter: /^@my-company\/core\/flags$/ }, (args) => ({
+        path: args.path,
+        namespace: "flags-ns",
+      }));
+
+      build.onLoad({ filter: /.*/, namespace: "flags-ns" }, () => ({
+        contents: JSON.stringify({ Flags: config.flags }),
+        loader: "json",
+      }));
+    },
+  };
 }
 
 function consolePlugin(): ESBuild.Plugin {

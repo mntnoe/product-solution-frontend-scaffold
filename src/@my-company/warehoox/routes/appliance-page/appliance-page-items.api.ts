@@ -1,5 +1,6 @@
 import { ApplianceItem } from "@my-company/warehoox/features/appliance-card/appliance-item.types";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import * as logger from "@my-company/core/logger";
 
 const queryKey = "appliance-page-items";
 
@@ -20,6 +21,7 @@ export function useAddAppliancePageItem() {
         { id: generateVerySafeId(), uid: "xxx", ...variables },
         ...items,
       ]);
+      logger.info("appliance item added", variables);
     },
   });
 }
